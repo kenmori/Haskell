@@ -54,6 +54,57 @@ double lucky
 :type double
 
 
+---
 
 
 
+
+aqrt スクルト
+
+ガード構文
+
+_ (ワイルドカード)
+
+if式はいらない。ガードも、パターンマッチも
+case式だけ知っていれば大丈夫
+
+全てケース式だけでできる
+
+分岐の全ての親玉はcase式
+
+
+ーー
+functions.hs
+
+多相
+ignoreSecond
+
+yの方を無視している
+
+---
+型シノニム
+
+
+
+type Human = (String, Integer)
+//型に別名をつけている
+
+Haskell98 -> Haskell2010
+リスぷ
+
+
+fg
+fg = f .g
+
+
+
+---
+stack ghci
+
+対話型(REPL)を抜ける
+:quit
+
+コンパイル後リンク
+stack ghc -- -fno-warn-tabs youSays.hs -o youSay
+実行
+./youSay
